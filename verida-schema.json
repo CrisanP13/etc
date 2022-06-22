@@ -2,8 +2,8 @@
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://raw.githubusercontent.com/CrisanP13/etc/master/verida-schema.json",
 	"name": "https://schemas.verida.io/identity/kyc/AU",
-	"title": "Australia: Basic KYC",
-	"titlePlural": "KYC AU",
+	"title": "FinClusive: individual",
+	"titlePlural": "FinC Ind",
 	"type": "object",
 	"database": {
 		"name": "credential"
@@ -12,12 +12,12 @@
 		"view": [
 			"firstName",
 			"lastName",
-			"gender",
 			"dateOfBirth",
 			"streetAddress1",
 			"suburb",
 			"state",
-			"postcode"
+			"postcode",
+			"finClusiveId"
 		],
 		"create": [
 			"firstName",
@@ -27,7 +27,8 @@
 			"streetAddress1",
 			"suburb",
 			"state",
-			"postcode"
+			"postcode",
+			"finClusiveId"
 		]
 	},
 	"allOf": [
@@ -39,10 +40,9 @@
 		},
 		{
 			"properties": {
-				"gender": {
-					"title": "Gender",
-					"type": "string",
-					"enum": ["male", "female"]
+				"finClusiveId": {
+					"title": "FinClusiveId",
+					"type": "string"
 				},
 				"firstName": {
 					"title": "First Name",
