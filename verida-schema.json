@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://raw.githubusercontent.com/CrisanP13/etc/master/verida-schema.json",
+	"$id": "AC249A2A-6429-4DA5-9A80-0AFCF34BCBDF",
 	"name": "https://schemas.verida.io/identity/kyc/AU",
 	"title": "FinClusive: individual",
 	"titlePlural": "FinC Ind",
